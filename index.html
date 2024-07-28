@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullmetal Alchemist Fan Site</title>
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <div id="app">
+        <div class="content-wrapper">
+            <!-- Left navigation -->
+            <nav class="left-nav">
+                <img src="images/logo.png" alt="Fullmetal Alchemist Logo" class="logo invertable">
+                <ul>
+                    <li><a href="#home" style="display: block; background-color: #333333; color: white; padding: 10px 15px; text-decoration: none; width: 100%; box-sizing: border-box; border-radius: 5px;">Home</a></li>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#plot">Plot</a></li>
+                    <li><a href="#alchemy">Alchemy</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+                <!-- Theme toggle button -->
+                <button id="theme-toggle">
+                    <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                        <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                        <g class="sun-beams" stroke="currentColor">
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </g>
+                        <mask id="moon-mask">
+                            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                            <circle cx="18" cy="6" r="6" fill="black" />
+                        </mask>
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Main content area -->
+            <div class="main-content">
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="./images/ed200.avif" alt="Carousel Image 1" class="carousel-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/al200.avif" alt="Carousel Image 2" class="carousel-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/mustang200.jpg" alt="Carousel Image 3" class="carousel-image">
+                        </div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <!-- Main content container -->
+                <div id="content" role="main">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="right-column">
+                <h3>Latest News</h3>
+                <ul>
+                    <li>News Item 1</li>
+                    <li>News Item 2</li>
+                    <li>News Item 3</li>
+                </ul>
+
+                <!-- Social media links -->
+                <div class="tiny-links">
+                    <a href="https://mirror.xyz" target="_blank" rel="noopener noreferrer"><i class="fa-mirror"></i></a>
+                    <a href="https://medium.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-reddit"></i></a>
+                </div>
+
+                <!-- Chat box -->
+                <div class="chat-box">
+                    <div id="chat-messages"></div>
+                    <div class="chat-input">
+                        <input type="text" id="chat-message" placeholder="Type your message...">
+                        <button id="chat-send">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full-size images -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="full-size-image" src="" alt="Full size image">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <div class="view-counter">
+            Views: 
+            <div class="counter-display">
+                <span class="digit">0</span>
+                <span class="digit">0</span>
+                <span class="digit">0</span>
+                <span class="digit">0</span>
+                <span class="digit">0</span>
+                <span class="digit">0</span>
+            </div>
+        </div>
+        <p>&copy; 2024 Fullmetal Alchemist Fans. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
