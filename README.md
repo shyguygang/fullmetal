@@ -1,5 +1,3 @@
-# fullmetal
-
 # 🌟 Fullmetal Alchemist Fan Site 🌟
 
 ![Fullmetal Alchemist Logo](images/logo.png)
